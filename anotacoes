@@ -1,0 +1,32 @@
+What is dependency injection and what are the advantages?
+
+•	Reduced Dependencies
+•	Reduced Dependency Carrying
+•	More Reusable Code
+•	More Testable Code
+•	More Readable Code
+What is a pattern? What is an anti-pattern. Is dependency injection a pattern?
+
+In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design.
+An anti-pattern is the opposite of this
+Dependency injection is a pattern
+
+• What is an interface and what are the advantages of making use of them in Java
+
+Interface é um contrato, injeção de dependências, reutilização de código, evitar refatoramento
+https://dzone.com/articles/programming-when-use
+
+Why are they recommended for Spring beans
+
+https://dzone.com/articles/playing-sround-with-spring-bean-configuration
+para trocar a implementação do bean apenas mudando arquivos de configuração
+
+What is meant by “application-context?
+
+The ApplicationContext is the central interface within a Spring application that is used for providing configuration information to the application.
+
+What is the concept of a “container” and what is its lifecycle?
+
+The Spring container is at the core of the Spring Framework. The container will create the objects, wire them together, configure them, and manage their complete life cycle from creation till destruction. The Spring container uses DI to manage the components that make up an application. These objects are called Spring Beans, which we will discuss in the next chapter.
+The container gets its instructions on what objects to instantiate, configure, and assemble by reading the configuration metadata provided. The configuration metadata can be represented either by XML, Java annotations
+
