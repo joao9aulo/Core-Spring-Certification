@@ -44,3 +44,16 @@ Métodos Init e Destroy???
 How are you going to create an ApplicationContext in an integration test test?
 Using the The Spring TestContext Framework
 
+What is the preferred way to close an application context? Does Spring Boot do this for
+you?
+
+Downcast your ApplicationContext to ConfigurableApplicationContext which defines close() method:
+
+((ConfigurableApplicationContext)appCtx).close();
+
+https://www.baeldung.com/spring-boot-shutdown
+
+O spring boot faz isso automaticamente 
+Fonte : https://stackoverflow.com/questions/26547532/how-to-shutdown-a-spring-boot-application-in-a-correct-way
+
+
