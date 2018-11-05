@@ -56,4 +56,11 @@ https://www.baeldung.com/spring-boot-shutdown
 O spring boot faz isso automaticamente 
 Fonte : https://stackoverflow.com/questions/26547532/how-to-shutdown-a-spring-boot-application-in-a-correct-way
 
+Can you describe:
+
+Dependency injection using Java configuration?
+
+https://dzone.com/articles/defining-bean-dependencies-with-java-config-in-spring-framework
+
+
 
