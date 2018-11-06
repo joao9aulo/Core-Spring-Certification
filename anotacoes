@@ -67,5 +67,6 @@ Dependency injection using annotations (@Component, @Autowired)
 @Autowired
 https://www.baeldung.com/spring-autowire
 
-
+@Component
+https://www.journaldev.com/21429/spring-component
 
