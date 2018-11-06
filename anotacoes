@@ -70,3 +70,25 @@ https://www.baeldung.com/spring-autowire
 @Component
 https://www.journaldev.com/21429/spring-component
 
+Component scanning, Stereotypes and Meta-Annotations?
+
+Component scanning :https://www.baeldung.com/spring-component-scanning
+Stereotypes :The noun definition of stereotype from Merriam-Webster says this:
+
+something conforming to a fixed or general pattern; especially : a standardized mental picture that is held in common by members
+of a group and that represents an oversimplified opinion, prejudiced attitude, or uncritical judgment
+
+It seems that it is for suggesting a role of particular class that is being annotated. This seems to make sense because it is often 
+recommended that you annotate your Controller classes with @Controller, Service classes with @Service, and so on.
+
+In addition to the obvious component-scanning functionality, Spring suggests that they make nice point-cut demarcations for your
+AOP needs.
+https://stackoverflow.com/questions/14756486/what-is-a-spring-stereotype
+
+Meta-Annotations: 
+Many of Spring 4’s annotations can now be used as meta annotations.  A meta annotation is an annotation that can be applied to
+another annotation.  That means, you can now define your own custom annotations that are an amalgamation of many Spring annotations
+combined into one annotation.
+
+
+
