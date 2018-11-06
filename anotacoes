@@ -62,5 +62,9 @@ Dependency injection using Java configuration?
 
 https://dzone.com/articles/defining-bean-dependencies-with-java-config-in-spring-framework
 
+Dependency injection using annotations (@Component, @Autowired)
+
+
+
 
 
