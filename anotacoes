@@ -90,5 +90,5 @@ Many of Spring 4’s annotations can now be used as meta annotations.  A meta an
 another annotation.  That means, you can now define your own custom annotations that are an amalgamation of many Spring annotations
 combined into one annotation.
 
-
+Scopes for Spring beans? What is the default scope?
 
