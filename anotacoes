@@ -143,5 +143,7 @@ https://www.baeldung.com/spring-autowire
 
 What do you have to do, if you would like to inject something into a private field? Ho does
 this impact testing?
-
 inject by setter and constructor, it causes impacts to mock fields
+
+How does the @Qualifier annotation complement the use of @Autowired?
+para usar múltiplas instâncias de um mesmo bean
