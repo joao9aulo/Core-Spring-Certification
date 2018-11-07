@@ -131,3 +131,9 @@ Consider how you enable JSR-250 annotations like @PostConstruct and
 @PreDestroy? When/how will they get called
 https://stackoverflow.com/questions/29064235/how-to-activate-jsr-250-annotation-into-a-spring-application-that-is-not-configu
 
+How else can you define an initialization or destruction method for a Spring bean
+Citar os n tipos de inicialização?
+
+What does component-scanning do?
+https://dzone.com/articles/spring-component-scan
+
