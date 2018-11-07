@@ -147,3 +147,6 @@ inject by setter and constructor, it causes impacts to mock fields
 
 How does the @Qualifier annotation complement the use of @Autowired?
 para usar múltiplas instâncias de um mesmo bean
+
+What is a proxy object and what are the two different types of proxies Spring can create?
+https://dzone.com/articles/power-proxies-java
