@@ -111,5 +111,15 @@ To @Bean methods that return  BeanFactoryPostProcessor types
 https://stackoverflow.com/questions/30874244/bean-annotation-on-a-static-method
 
 What is a ProperySourcesPlaceholderConfigurer used for?
+https://dzone.com/articles/spring-core-diving-into-the-propertyplaceholdercon
 
+What is a BeanPostProcessor and how is it different to a BeanFactoryPostProcessor? 
+https://stackoverflow.com/questions/30455536/beanfactorypostprocessor-and-beanpostprocessor-in-lifecycle-events
 
+What do they do? When are they called?
+Modificam bean definitions. 
+BeanFactoryPostProcessor é executado antes dos beans serem instanciados
+BeanPostProcessor é executado após os beans serem instanciados
+
+What is an initialization method and how is it declared on a Spring bean?
+https://www.baeldung.com/running-setup-logic-on-startup-in-spring
