@@ -94,3 +94,7 @@ Scopes for Spring beans? What is the default scope?
 
 Default scope: singleton
 https://www.baeldung.com/spring-bean-scopes
+
+ Are beans lazily or eagerly instantiated by default? How do you alter this behavior?
+default = eagerly
+https://www.baeldung.com/spring-lazy-annotation
