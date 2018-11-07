@@ -137,3 +137,11 @@ Citar os n tipos de inicialização?
 What does component-scanning do?
 https://dzone.com/articles/spring-component-scan
 
+What is the behavior of the annotation @Autowired with regards to field injection,
+constructor injection and method injection?
+https://www.baeldung.com/spring-autowire
+
+What do you have to do, if you would like to inject something into a private field? Ho does
+this impact testing?
+
+inject by setter and constructor, it causes impacts to mock fields
