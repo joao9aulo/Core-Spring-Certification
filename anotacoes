@@ -149,4 +149,16 @@ How does the @Qualifier annotation complement the use of @Autowired?
 para usar múltiplas instâncias de um mesmo bean
 
 What is a proxy object and what are the two different types of proxies Spring can create?
+Interface and object proxies
 https://dzone.com/articles/power-proxies-java
+
+What are the limitations of these proxies (per type)?
+
+JAVA Proxies:
+They are based on runtime implementations of interfaces
+They are public, final and not abstract
+They extend java.lang.reflect.Proxy
+
+CGLib proxies:
+you are not required to implement interfaces
+you can extend a class
