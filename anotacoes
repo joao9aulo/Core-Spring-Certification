@@ -205,4 +205,27 @@ por que ele também extends a classe
  How do you inject scalar/literal values into Spring beans?
  https://dzone.com/articles/playing-sround-with-spring-bean-configuration
  
- 
+ What is @Value used for?
+This annotation can be used for injecting values into fields in Spring-managed beans and it can be applied at the field or 
+constructor/method parameter level.
+
+What is Spring Expression Language (SpEL for short)?
+https://www.baeldung.com/spring-expression-language
+
+What is the Environment abstraction in Spring?
+Interface representing the environment in which the current application is running. 
+Models two key aspects of the application environment: profiles and properties. 
+Methods related to property access are exposed via the PropertyResolver superinterface.
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/Environment.html
+
+Where can properties in the environment come from – there are many sources for
+properties – check the documentation if not sure. Spring Boot adds even more.
+https://www.baeldung.com/properties-with-spring
+
+What can you reference using SpEL?
+In Spring EL, you can reference a bean, and nested properties using a ‘dot (.)‘ symbol.
+
+What is the difference between $ and # in @Value expressions?
+${...} is the property placeholder syntax. It can only be used to dereference properties.
+#{...} is SpEL syntax, which is far more capable and complex. It can also handle property placeholders, and a lot more besides.
+
