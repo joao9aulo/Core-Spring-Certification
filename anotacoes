@@ -162,3 +162,47 @@ They extend java.lang.reflect.Proxy
 CGLib proxies:
 you are not required to implement interfaces
 you can extend a class
+
+What are the advantages of Java Config? What are the limitations?
+Advantages:Java is type safe. Compiler will report issues if you are configuring right bean class qualifiers.
+Limitation: Cant put the configurations in one place?????
+
+What does the @Bean annotation do? 
+To declare a bean, simply annotate a method with the @Bean annotation. When JavaConfig encounters such a method,
+it will execute that method and register the return value as a bean within a BeanFactory. By default, 
+the bean name will be the same as the method name 
+https://docs.spring.io/spring-javaconfig/docs/1.0.0.M4/reference/html/ch02s02.html
+
+What is the default bean id if you only use @Bean? How can you override this?
+When Spring creates a Bean Definition from a @Service or @Component annotation, 
+it will by default create an id for the bean by lowercasing the first letter of the Class Name. 
+If you want to override that the behavior, you can provide an alternative id in the annotation, eg. @Service("profileService").
+https://stackoverflow.com/questions/29457834/what-is-the-bean-id-of-spring-bean-implements-an-interface
+
+Why are you not allowed to annotate a final class with @Configuration
+https://stackoverflow.com/questions/29074270/why-in-spring-i-am-not-allowed-to-annotate-a-final-class-with-configuration
+
+How do @Configuration annotated classes support singleton beans?
+é singleton por id
+https://dzone.com/articles/an-interview-question-on-spring-singletons
+
+Why can’t @Bean methods be final either?
+por que ele também extends a classe
+
+ How do you configure profiles?, What are possible use cases where they might be useful?
+ https://www.baeldung.com/spring-profiles
+ úteis para separar ambientes
+ 
+ Can you use @Bean together with @Profile?
+ sim
+ 
+ Can you use @Component together with @Profile?
+ sim
+ 
+ How many profiles can you have? 
+ muitos????
+ 
+ How do you inject scalar/literal values into Spring beans?
+ https://dzone.com/articles/playing-sround-with-spring-bean-configuration
+ 
+ 
