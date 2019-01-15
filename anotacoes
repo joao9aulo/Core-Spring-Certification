@@ -231,6 +231,13 @@ ${...} is the property placeholder syntax. It can only be used to dereference pr
 
 ● What is the concept of AOP? Which problem does it solve? What is a cross cutting concern?
 
+Aspect-Oriented Programming (AOP) is another way of thing to some areas of application i.e. cross cutting concern like security, logging and transaction. AOP is simple complement of OOP programming for different concerns. In OOP, the key unit of modularity is the class, whereas in AOP the unit of modularity is the aspect.
+
+Aspect-Oriented Programming (AOP) enables modularization of cross-cutting concerns to solve following problems.
+
+To avoid tangling
+To eliminate scattering
+
 AOP is often defined as a technique that promotes separation of concerns in a software system. Systems are composed of several 
 components, each responsible for a specific piece of functionality. But often these components also carry additional responsibilities 
 beyond their core functionality. System services such as logging, transaction management, and security often find their way into 
@@ -250,3 +257,88 @@ Implementing Cross Cutting Concerns Without Modularization
 • The same concern spread across modules
 https://www.dineshonjava.com/spring-aop-interview-questions-and-answers/
 
+What is a pointcut, a join point, an advice, an aspect, weaving?
+Pointcut
+– An expression that selects one or more Join Points
+Join Point
+– A point in the execution of a program such as a method call or exception thrown
+Advice
+– Code to be executed at each selected Join Point
+Aspect
+– A module that encapsulates pointcuts and advice
+Weaving
+– Technique by which aspects are combined with main code
+Introduction
+-Spring AOP allows to introduce new interfaces (and a corresponding application) to any object advises.
+Target Object
+-An object is assisted by one or more respects. Also known as the object advised.
+AOP Proxy
+-AOP proxy is an object used to perform the contract area. This object is created by the AOP framework. In Spring AOP proxy is part of JDK dynamic proxy or proxy CGLIB.
+
+How does Spring solve (implement) a cross cutting concern?
+Implement your mainline application logic
+– Focusing on the core problem
+Write aspects to implement your cross-cutting concerns
+– Spring provides many aspects out-of-the-box
+Weave the aspects into your application
+– Adding the cross-cutting behaviors to the right places
+
+Which are the limitations of the two proxy-types?
+○ What visibility must Spring bean methods have to be proxied using Spring AOP?
+
+Spring will create either JDK or CGLib proxies
+
+JDK Proxy
+Also called dynamic proxies
+API is built into the JDK
+Requirements: Java interface(s)
+All interfaces proxied
+CGLib Proxy
+NOT built into JDK
+Included in Spring jars
+Used when interface not available
+Cannot be applied to final classes or methods
+
+How many advice types does Spring support. Can you name each one?
+○ What are they used for?
+○ Which two advices can you use if you would like to try and catch exceptions?
+
+Before advice: Advice that executes before a join point, but which does not have the ability to prevent execution flow proceeding to the
+join point (unless it throws an exception).
+After returning advice: Advice to be executed after a join point completes normally: for example, if a method returns without throwing 
+an exception.
+After throwing advice: Advice to be executed if a method exits by throwing an exception.
+After advice: Advice to be executed regardless of the means by which a join point exits (normal or exceptional return).
+Around advice: Advice that surrounds a join point such as a method invocation. This is the most powerful kind of advice. 
+Around advice can perform custom behavior before and after the method invocation. It is also responsible for choosing whether to proceed 
+to the join point or to shortcut the advised method execution by returning its own return value or throwing an exception.
+
+What do you have to do to enable the detection of the @Aspect annotation?
+To use @AspectJ aspects in a Spring configuration you need to enable Spring support for configuring Spring AOP based on @AspectJ aspects,
+and autoproxying beans based on whether or not they are advised by those aspects.
+
+If shown pointcut expressions, would you understand them?
+○ For example, in the course we matched getter methods on Spring Beans, what would be the
+correct pointcut expression to match both getter and setter methods?
+
+Any class: @Pointcut("execution( get(..)) && execution( set(..))")
+Certain class: @Pointcut("execution( someService.get(..)) && execution( someService.set(..))")
+https://quizlet.com/324491121/aspect-oriented-programming-flash-cards/
+https://www.baeldung.com/spring-aop-pointcut-tutorial
+
+What is the JoinPoint argument used for?
+Advices have as a parameter a reference of type org.aspectj.lang.JoinPoint. The object that spring injects at runtime provides
+access to both the state available at a join point and static information about it: type of the target, name of the method target,
+arguments, reference to the target itself. This information can be used for tracing and logging; it does not give direct control over 
+the execution of the target method.
+
+https://quizlet.com/324491121/aspect-oriented-programming-flash-cards/
+
+What is a ProceedingJoinPoint? When is it used?
+The type ProceedingJoinPoint inherits from JoinPoint and adds the proceed() method that is used to call the target method. 
+Around advice is declared using the @Around annotation. The first parameter of the advice method must be of type ProceedingJoinPoint. 
+Within the body of the advice, calling proceed() on the ProceedingJoinPoint causes the underlying method to execute. 
+The proceed method may also be called passing in an Object[] - the values in the array will be used as the arguments to the method 
+execution when it proceeds.
+
+https://quizlet.com/324491121/aspect-oriented-programming-flash-cards/
