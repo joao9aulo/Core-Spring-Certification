@@ -346,3 +346,5 @@ The proceed method may also be called passing in an Object[] - the values in the
 execution when it proceeds.
 
 https://quizlet.com/324491121/aspect-oriented-programming-flash-cards/
+
+Útil para entender AOP: https://dzone.com/articles/implementing-aop-with-spring-boot-and-aspectj
