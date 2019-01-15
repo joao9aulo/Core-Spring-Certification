@@ -30,9 +30,10 @@ information to the application.
 What is the concept of a “container” and what is its lifecycle?
 
 The Spring container is at the core of the Spring Framework. The container will create the objects, wire them together, configure them,
-and manage their complete life cycle from creation till destruction. The Spring container uses DI to manage the components that make up an
-application. These objects are called Spring Beans, which we will discuss in the next chapter.
-The container gets its instructions on what objects to instantiate, configure, and assemble by reading the configuration metadata provided. The configuration metadata can be represented either by XML, Java annotations
+and manage their complete life cycle from creation till destruction. The Spring container uses DI to manage the components that make up 
+an application. These objects are called Spring Beans, which we will discuss in the next chapter.
+The container gets its instructions on what objects to instantiate, configure, and assemble by reading the configuration metadata 
+provided. The configuration metadata can be represented either by XML, Java annotations
 
 How are you going to create a new instance of an ApplicationContext?
 ApplicationContext ap = new ClassPathXMLApplicationContext(“resources/spring.xml”);
@@ -231,7 +232,9 @@ ${...} is the property placeholder syntax. It can only be used to dereference pr
 
 ● What is the concept of AOP? Which problem does it solve? What is a cross cutting concern?
 
-Aspect-Oriented Programming (AOP) is another way of thing to some areas of application i.e. cross cutting concern like security, logging and transaction. AOP is simple complement of OOP programming for different concerns. In OOP, the key unit of modularity is the class, whereas in AOP the unit of modularity is the aspect.
+Aspect-Oriented Programming (AOP) is another way of thing to some areas of application i.e. cross cutting concern like security, 
+logging and transaction. AOP is simple complement of OOP programming for different concerns. In OOP, the key unit of modularity 
+is the class, whereas in AOP the unit of modularity is the aspect.
 
 Aspect-Oriented Programming (AOP) enables modularization of cross-cutting concerns to solve following problems.
 
