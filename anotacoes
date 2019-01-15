@@ -229,3 +229,24 @@ What is the difference between $ and # in @Value expressions?
 ${...} is the property placeholder syntax. It can only be used to dereference properties.
 #{...} is SpEL syntax, which is far more capable and complex. It can also handle property placeholders, and a lot more besides.
 
+● What is the concept of AOP? Which problem does it solve? What is a cross cutting concern?
+
+AOP is often defined as a technique that promotes separation of concerns in a software system. Systems are composed of several 
+components, each responsible for a specific piece of functionality. But often these components also carry additional responsibilities 
+beyond their core functionality. System services such as logging, transaction management, and security often find their way into 
+components whose core responsibilities is something else. These system services are commonly referred to as cross-cutting concerns 
+because they tend to cut across multiple components in a system.
+https://www.dineshonjava.com/spring-aop-interview-questions-and-answers/
+
+○ Name three typical cross cutting concerns.
+logging, security and data transfer
+
+○ What two problems arise if you don't solve a cross cutting concern via AOP?
+Implementing Cross Cutting Concerns Without Modularization
+• Failing to modularize cross-cutting concerns leads to two things
+– Code tangling
+• A coupling of concerns
+– Code scattering
+• The same concern spread across modules
+https://www.dineshonjava.com/spring-aop-interview-questions-and-answers/
+
