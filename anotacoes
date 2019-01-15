@@ -273,7 +273,8 @@ Introduction
 Target Object
 -An object is assisted by one or more respects. Also known as the object advised.
 AOP Proxy
--AOP proxy is an object used to perform the contract area. This object is created by the AOP framework. In Spring AOP proxy is part of JDK dynamic proxy or proxy CGLIB.
+-AOP proxy is an object used to perform the contract area. This object is created by the AOP framework. In Spring AOP proxy is part of 
+JDK dynamic proxy or proxy CGLIB.
 
 How does Spring solve (implement) a cross cutting concern?
 Implement your mainline application logic
