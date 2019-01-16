@@ -348,3 +348,22 @@ execution when it proceeds.
 https://quizlet.com/324491121/aspect-oriented-programming-flash-cards/
 
 Útil para entender AOP: https://dzone.com/articles/implementing-aop-with-spring-boot-and-aspectj
+
+What is the difference between checked and unchecked exceptions?
+https://stackoverflow.com/questions/14011749/checked-vs-unchecked-exceptions-in-java
+
+Why does Spring prefer unchecked exceptions?
+https://stackoverflow.com/questions/23178952/why-spring-handles-only-unchecked-exceptions
+
+What is the data access exception hierarchy?
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/dao/DataAccessException.html
+
+How do you configure a DataSource in Spring? Which bean is very useful for development/test
+databases?
+https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html
+
+https://stackoverflow.com/questions/29195935/how-do-you-configure-a-datasource-in-spring
+
+What is the Template design pattern and what is the JDBC template?
+https://www.geeksforgeeks.org/template-method-design-pattern/
+
