@@ -366,4 +366,7 @@ https://stackoverflow.com/questions/29195935/how-do-you-configure-a-datasource-i
 
 What is the Template design pattern and what is the JDBC template?
 https://www.geeksforgeeks.org/template-method-design-pattern/
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html
 
+USAR ESSE SITE COMO FONTE:
+https://codingideas.blog/core-spring-4-2-study-guide-answers-part-3-jdbc-transactions-and-orm
