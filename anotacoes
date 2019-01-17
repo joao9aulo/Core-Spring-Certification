@@ -373,3 +373,18 @@ https://codingideas.blog/core-spring-4-2-study-guide-answers-part-3-jdbc-transac
 
 ESSE TAMBÉM:
 https://dzone.com/articles/top-20-spring-mvc-interview-questions-and-answers
+
+Testing:
+
+Do you use Spring in a unit test?
+https://stackoverflow.com/questions/50346837/is-spring-framework-used-in-a-unit-test
+
+What type of tests typically use Spring?
+Integration tests?
+https://www.baeldung.com/spring-boot-testing
+
+● How can you create a shared application context in a JUnit integration test?
+https://stackoverflow.com/questions/8501975/reuse-spring-application-context-across-junit-test-classes
+
+
+
