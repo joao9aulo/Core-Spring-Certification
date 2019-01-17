@@ -386,5 +386,21 @@ https://www.baeldung.com/spring-boot-testing
 ● How can you create a shared application context in a JUnit integration test?
 https://stackoverflow.com/questions/8501975/reuse-spring-application-context-across-junit-test-classes
 
+When and where do you use @Transactional in testing?
+https://www.baeldung.com/spring-test-programmatic-transactions
 
+How are mock frameworks such as Mockito or EasyMock used?
+https://www.baeldung.com/mockito-vs-easymock-vs-jmockit
+
+How is @ContextConfiguration used?
+https://stackoverflow.com/questions/17987064/what-does-contextconfiguration-refer-to
+
+How does Spring Boot simplify writing tests?
+ @SpringBootTest annotation
+ https://dzone.com/articles/unit-and-integration-tests-in-spring-boot-2
+ 
+What does @SpringBootTest do? How does it interact with @SpringBootApplication and
+@SpringBootConfiguration?
+
+???
 
