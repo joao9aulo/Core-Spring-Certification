@@ -35,6 +35,8 @@ an application. These objects are called Spring Beans, which we will discuss in 
 The container gets its instructions on what objects to instantiate, configure, and assemble by reading the configuration metadata 
 provided. The configuration metadata can be represented either by XML, Java annotations
 
+https://stackoverflow.com/questions/28882757/how-is-created-the-spring-container
+
 How are you going to create a new instance of an ApplicationContext?
 ApplicationContext ap = new ClassPathXMLApplicationContext(“resources/spring.xml”);
 Colocando um xml de configuração no construtor
