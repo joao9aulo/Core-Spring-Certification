@@ -1,0 +1,4 @@
+Aspect: Problema recorrente a ser resolvido
+Joint point: Ponto durante a execução do programa, por exemplo um método.
+Advice: Ação tomada no joint point, há vários tipos tais como: "around," "before" and "after"
+Pointcut: Uma propriedade que correponda a um Joint Point, por exemplo um método com um nome específico
