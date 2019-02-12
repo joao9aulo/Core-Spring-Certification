@@ -1,0 +1,5 @@
+Serializable : É o nível mais alto, não há inconsistências.
+Repeatable Read : Garante read and write locks, mas não impede phantom reads, já que o lock é só durante a transação.
+Read Committed: Garante que a informação lida foi commitada, mas não garante que se ela seja lida de novo durante a transação não 
+seja diferente.
+Read Uncommitted: Nível mais baixo, é possível ver dados ainda não commitados na leitura.
